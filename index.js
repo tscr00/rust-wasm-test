@@ -11,6 +11,9 @@ const imageData = context.createImageData(width, height);
 const flatCanvas = FlatCanvas.new(width, height);
 
 flatCanvas.draw_line(Point2d.new(0, 0), Point2d.new(256, 32), Color.black());
+flatCanvas.draw_line(Point2d.new(0, 0), Point2d.new(0, 32), Color.black());
+flatCanvas.draw_line(Point2d.new(0, 0), Point2d.new(12, 200), Color.black());
+flatCanvas.draw_line(Point2d.new(0, 0), Point2d.new(43, 30), Color.black());
 
 const renderLoop = () => {
     const canvasPtr = flatCanvas.canvas();
